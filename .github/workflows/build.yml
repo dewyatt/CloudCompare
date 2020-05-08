@@ -2,6 +2,10 @@ name: Build
 
 on: push
 
+env:
+  ACTIONS_RUNNER_DEBUG: true
+  ACTIONS_STEP_DEBUG: true
+
 jobs:
   build:
     name: ${{ matrix.config.name }} SCALAR_DOUBLE=${{ matrix.scalar_double }}
